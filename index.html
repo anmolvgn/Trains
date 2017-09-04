@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Train Ticker</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Bootstrap CDN-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--jquery bootstrap CDN-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <header class="container">
+      <div class="row">
+        <span><h1 id= "Title" col-lg-12><strong>Train Ticker</strong></h1></span>
+      </div>
+      <div class="row">
+        <span>
+          <h2 col-md-6>Type in your travel itenary to see the latest schedule details</h2>
+        </span>
+      </div>
+      <hr>
+    </header>
+    <table id = "trainTable" class="container">
+      <!-- <div class="row"> -->
+        <td><h3 col-md-3>Train Number</h3></td>
+        <!-- <br> -->
+        <td><h3 col-md-3>Destination</h3></td>
+        <!-- <br> -->
+        <td><h3 col-md-3>Departure Time</h3></td>
+        <!-- <br> -->
+        <td><h3 col-md-3>Frequency</h3></td>
+      <!-- </div> -->
+    </table>
+    <hr>
+  </head>
+  <body>
+    <form class="container">
+      <div class="row">
+        
+        <span>
+          <h3 col-md-12>Train Number</h3>
+          <input col-md-12 id= "TrainNo." type="text" name="Train Number" value=" ">
+        </span>
+      </div>
+      
+      <br>
+      <div class="row">
+        
+        <span>
+          <h3 col-md-12>Destination</h3>
+          <input col-md-12 id= "Dest." type="text" name="Destination" value=" ">
+        </span>
+      </div>
+
+      <br>
+      <div class="row">
+        
+        <span>
+          <h3 col-md-12>Departure Time</h3>
+          <input col-md-12 id= "DT" type="Time" name="Departure Time" value=" ">
+        </span>
+      </div>
+
+      <br>
+      <div class="row">
+        <span>
+          <h3 col-md-12>Frequency (min)</h3>
+          <input col-md-11 id="freq" type="text" name="Frequency" value=" ">
+        </span>
+      </div>
+      
+      <br>
+      <span><button id="submit" type="Submit" name="Search">Submit</button></span>
+    </form>
+    
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  </body>
+</html>
